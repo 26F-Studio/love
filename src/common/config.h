@@ -52,6 +52,9 @@
 // I know it's not linux, but it seems most "linux-only" code is bsd-compatible
 #	define LOVE_LINUX 1
 #endif
+#if defined(__EMSCRIPTEN__)
+#  define LOVE_EMSCRIPTEN 1
+#endif
 
 // Endianness.
 #if defined(__ppc__) || defined(__ppc) || defined(__powerpc__) || defined(__powerpc)
